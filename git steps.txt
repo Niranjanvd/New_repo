@@ -1,0 +1,50 @@
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (master)
+$ git branch firstbranch
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (master)
+$ git checkout firstbranch
+Switched to branch 'firstbranch'
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (firstbranch)
+$ git add git4.txt
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (firstbranch)
+$ git commit -m "making changes in first branch"
+[firstbranch 968f358] making changes in first branch
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git4.txt
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (firstbranch)
+$ ls
+'git 1.txt'   git3.txt   receipe.txt  'system to github.txt'
+ git2.txt     git4.txt   ss            vdownloader.py
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (firstbranch)
+$ git checkout master
+Switched to branch 'master'
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (master)
+$ ls
+'git 1.txt'   git3.txt      ss                      vdownloader.py
+ git2.txt     receipe.txt  'system to github.txt'
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (master)
+$ ls
+'git 1.txt'   git3.txt      ss                      vdownloader.py
+ git2.txt     receipe.txt  'system to github.txt'
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (master)
+$ git merge firstbranch
+Updating f1c3504..968f358
+Fast-forward
+ git4.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 git4.txt
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (master)
+$ ls
+'git 1.txt'   git3.txt   receipe.txt  'system to github.txt'
+ git2.txt     git4.txt   ss            vdownloader.py
+
+DELL-Pc@DELL MINGW64 ~/Documents/INFOSYS/git (master)
